@@ -1,0 +1,101 @@
+.header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.photo {
+    margin-top: -125px;
+    width: 275px;
+    border-radius: 75%;
+    border: 5px solid white;
+}
+
+.cover {
+    width: 100%;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f6f6f6;
+    width: 70%;
+    margin: 25px 0px 0px 0px;
+    padding: 25px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.social-media>a>i {
+    margin-left: 10px;
+    font-size: 35px;
+
+}
+
+.bi-linkedin {
+    color: #0e76a8;
+}
+
+.bi-github {
+    color: black;
+}
+
+.social-media>a>i:hover {
+    color: #405a6d;
+    transition: 0.5s;
+}
+
+.experiences {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 25px;
+    background-color: #f6f6f6;
+    width: 70%;
+    margin: 0px;
+}
+
+.otherExperiences {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    align-items: start;
+    padding: 25px;
+    background-color: #f6f6f6;
+    width: 70%;
+    margin: 0px;
+}
+
+.logo {
+
+    width: 100px;
+    margin-right: 25px;
+
+
+}
+
+.page-item a.active {
+    border: none !important;
+    background-color: #012643 !important;
+    color: #f6f6f6 !important;
+}
+
+.page-item a {
+    border: none;
+    color: #012643;
+}
+
+.page-item a:hover {
+    color: #012643;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vinicius Garcia - Experiências</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;500&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+
+</head>
+
+<body>
+<div>
+    <img class="cover" src="../static/Images/v617batch2-bb-01-technology.jpg" alt="">
+</div>
+<div class=" container">
+    <div class="header">
+        <div>
+
+            <div>
+                <img class="photo" src="../static/Images/IMG_4758.jpg" alt="">
+            </div>
+
+        </div>
+        <div class="info">
+            <h1 th:text="${info.nome}"></h1>
+            <h4 th:text="${info.cargo}"></h4>
+            <p th:text="${info.email}"></p>
+            <p th:text="${info.telefone}"></p>
+            <p th:text="${info.dataNascimento}"></p>
+            <div class="social-media">
+                <a href="https://github.com/Vinidsg">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/vinicius-garcia-268274163/">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="experiences">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link active">Experiências</a>
+                </li>
+                <li class="page-item " aria-current="page">
+                    <a class="page-link" href="/index2.html">Informações Acadêmicas</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="experiences">
+            <div>
+                <img class="logo" src="../static/Images/Logo%20GE.png" alt="">
+            </div>
+            <div>
+                <h3>Experiências</h3>
+                <h6>GE HealthCare</h6>
+                <p>Data Analysis Intern</p>
+                <p>11/2022 - Atual</p>
+                <p>São Paulo - SP | Brasil</p>
+                <p>Faço análises de grandes quantidades de dados e elaboro dashboards sob demanda no intuito de
+                    ajudar a empresa em tomadas de decisões, trabalho no time de Business Intelligence, o que me
+                    permite usar ferramentas como Power BI para análise de dados, Python e SQL para que todas as
+                    análises sejam realizadas da melhor e mais correta maneira possível.</p>
+                <ul>
+                    <li>Power BI</li>
+                    <li>SQL</li>
+                    <li>Python</li>
+                    <li>Excel e VBA</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="experiences">
+            <div>
+                <img class="logo" src="../static/Images/Logo%20Evermart.png" alt="">
+            </div>
+            <div>
+                <h6>Evermart</h6>
+                <p>Back-End Development Intern</p>
+                <p>08/2022 - 10/2022</p>
+                <p>São Paulo - SP | Brasil</p>
+                <p>Trabalhei com desenvolvedores nível Sênior no intuito de ajudar com as tasks no dia a dia,
+                    adquiri experiência e conhecimento prático na metodologia ágil Scrum na qual usávamos o Jira
+                    para a administração das tarefas a serem realizadas.</p>
+                <ul>
+                    <li>Jira</li>
+                    <li>Scrum</li>
+                    <li>PHP</li>
+                    <li>MVC</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="experiences">
+            <div>
+                <img class="logo" src="../static/Images/Robotton%20Logo.png" alt="">
+            </div>
+            <div>
+                <h6>Robotton Imóveis & Condomínios</h6>
+                <p>Analista de Departamento Pessoal</p>
+                <p>08/2014 - 04/2022</p>
+                <p>São Paulo - SP | Brasil</p>
+                <p>Atuava na folha de pagamento, realizando cálculos de horas extras mensalmente, bem como cálculo e
+                    pagamento dos encargos trabalhistas na área de condomínios, ao todo eram cerca de 350
+                    condomínios e mais de 2 mil funcionários. Fazia as entregas ao eSocial da folha de pagamento
+                    mensalmente, e também realizava estudo de contratações, demissões e reduções de horas extras aos
+                    condomínios.</p>
+                <ul>
+                    <li>Pensamento Analítico</li>
+                    <li>Resolução de Problemas</li>
+                    <li>Capacidade Analítica</li>
+                    <li>Comunicação</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div>
+    <img class="cover" src="../static/Images/FooterImg.jpg" alt="">
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
