@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Vinicius Garcia - Experiências</title>
+    <title>Vinicius Garcia - Acadêmico</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,23 +15,22 @@
           integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
-
-
 </head>
 
 <body>
 <div>
-    <img class="cover" src="Images/v617batch2-bb-01-technology.jpg" alt="">
+    <img class="cover" src="/images/v617batch2-bb-01-technology.jpg" alt="">
 </div>
 <div class=" container">
     <div class="header">
         <div>
 
             <div>
-                <img class="photo" src="Images/IMG_4758.jpg" alt="">
+                <img class="photo" src="/images/IMG_4758.jpg" alt="">
             </div>
 
         </div>
+
         <div class="info">
             <h1 th:text="${nome}"></h1>
             <h4 th:text="${cargo}"></h4>
@@ -48,77 +47,74 @@
             </div>
         </div>
 
-
         <div class="experiences">
             <ul class="pagination">
-                <li class="page-item">
-                    <a class="page-link active">Experiências</a>
-                </li>
                 <li class="page-item " aria-current="page">
-                    <a class="page-link" href="index2">Informações Acadêmicas</a>
+                    <a class="page-link" href="/index">Experiências</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link active">Informações Acadêmicas</a>
                 </li>
             </ul>
         </div>
 
         <div class="experiences">
             <div>
-                <img class="logo" src="Images/Logo%20GE.png" alt="">
+                <img class="logo" src="/images/Logo Senac.png" alt="">
             </div>
             <div>
-                <h3>Experiências</h3>
-                <h6 th:text="${empresaAtual}"></h6>
-                <p th:text="${cargoAtual}"></p>
-                <p th:text="${periodoAtual}"></p>
-                <p th:text="${localidadeAtual}"></p>
-                <p th:text="${descAtual}"></p>
+                <h3>Informações Acadêmicas</h3>
+                <h6 th:text="${universidade}"></h6>
+                <p th:text="${curso}"></p>
+                <p th:text="${periodo}"></p>
+                <p th:text="${localidade}"></p>
+                <p th:text="${descCurso}"></p>
                 <ul>
-                    <th:block th:each="habilidade : ${listaDeHabilidades}">
-                        <li th:text="${habilidade}"></li>
+                    <th:block th:each="skills : ${listaDeSkills}">
+                        <li th:text="${skills}"></li>
+                    </th:block>
+                </ul>
+            </div>
+        </div>
+
+        <div class="otherExperiences">
+            <div>
+                <h3>Outros conhecimentos e interesses</h3>
+                <ul>
+                    <th:block th:each="outros : ${outros}">
+                        <li th:text="${outros}"></li>
                     </th:block>
                 </ul>
             </div>
         </div>
 
         <div class="experiences">
-            <div>
-                <img class="logo" src="Images/Logo%20Evermart.png" alt="">
-            </div>
-            <div>
-                <h6 th:text="${empresaAnterior2}"></h6>
-                <p th:text="${cargoAnterior2}"></p>
-                <p th:text="${periodoAnterior2}"></p>
-                <p th:text="${localidadeAnterior2}"></p>
-                <p th:text="${descAnterior2}"></p>
-                <ul>
-                    <th:block th:each="habilidadeAnterior2 : ${listaDeHabilidadesAnterior2}">
-                        <li th:text="${habilidadeAnterior2}"></li>
-                    </th:block>
-                </ul>
-            </div>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Idioma</th>
+                    <th scope="col">Leitura</th>
+                    <th scope="col">Escrita</th>
+                    <th scope="col">Conversação</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="idioma : ${idiomas}">
+                    <td th:text="${idioma.nome}"></td>
+                    <td th:text="${idioma.leitura}"></td>
+                    <td th:text="${idioma.escrita}"></td>
+                    <td th:text="${idioma.conversacao}"></td>
+                </tr>
+                </tbody>
+            </table>
         </div>
 
-        <div class="experiences">
-            <div>
-                <img class="logo" src="Images/Robotton%20Logo.png" alt="">
-            </div>
-            <div>
-                <h6 th:text="${empresaAnterior3}"></h6>
-                <p th:text="${cargoAnterior3}"></p>
-                <p th:text="${periodoAnterior3}"></p>
-                <p th:text="${localidadeAnterior3}"></p>
-                <p th:text="${descAnterior3}"></p>
-                <ul>
-                    <th:block th:each="habilidadeAnterior3 : ${listaDeHabilidadesAnterior3}">
-                        <li th:text="${habilidadeAnterior3}"></li>
-                    </th:block>
-                </ul>
-            </div>
-        </div>
+
     </div>
 </div>
 
 <div>
-    <img class="cover" src="Images/FooterImg.jpg" alt="">
+    <img class="cover" src="/images/FooterImg.jpg" alt="">
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"

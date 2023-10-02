@@ -9,10 +9,9 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Info {
+public class Idioma {
     private String nome;
-    private String cargo;
-    private String email;
-    private String telefone;
-    private String dataNascimento;
+    private String leitura;
+    private String escrita;
+    private String conversacao;
 }
